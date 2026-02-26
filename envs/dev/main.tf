@@ -1,3 +1,4 @@
+# VCS Workflow Enabled - Automated Terraform runs on Git push
 terraform {
   required_version = ">= 1.4.0"
 
