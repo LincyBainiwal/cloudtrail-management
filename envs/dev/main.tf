@@ -23,5 +23,7 @@ module "cloudtrail_auditor" {
   tags = {
     Name        = "cloudtrail-management"
     Environment = "Dev"
+    VCS         = "Enabled"
+    ManagedBy   = "Terraform-Cloud"
   }
 }
