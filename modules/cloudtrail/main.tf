@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "trail_bucket" {
   bucket        = var.bucket_name
-  force_destroy = true
+  force_destroy = false
 }
 
 resource "aws_s3_bucket_versioning" "trail_versioning" {
@@ -59,6 +59,7 @@ resource "aws_cloudtrail" "management_trail" {
   include_global_service_events = true
   is_multi_region_trail         = true
   enable_log_file_validation    = true
+  depends_on                    = [aws_s3_bucket_policy.trail_policy]
 
   event_selector {
     read_write_type           = "WriteOnly"
