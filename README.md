@@ -262,10 +262,9 @@ terraform init
 
 ```bash
 # Refresh Doormat credentials
-doormat aws export --account aws_lincy.bainiwal_test
 
 # Re-export for Terraform Cloud
-doormat aws tf-push variable-set --account aws_lincy.bainiwal_test --id varset-<id>
+
 ```
 
 ### State Lock Issues
