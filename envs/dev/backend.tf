@@ -8,11 +8,8 @@ terraform {
   cloud {
     organization = "lincy21_terraform"
 
-    # workspaces {
-    #   name = "cloudtrail-vcs-dev"
-    # }
     workspaces {
-      name = "cloudtrail-vcs-dev"
+      name = "cloudtrail-cli-dev"
     }
   }
 }
