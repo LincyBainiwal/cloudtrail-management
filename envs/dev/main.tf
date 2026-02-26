@@ -17,8 +17,8 @@ module "cloudtrail_auditor" {
   source = "./modules/cloudtrail"
 
   trail_name  = "lincy-management-audit-trail"
-  # bucket_name = "lincy-cloudtrail-audit-bucket-12345"
-  bucket_name = "lincy-cloudtrail-audit-bucket-vcs-dev-12345"
+  bucket_name = "lincy-cloudtrail-audit-bucket-12345"
+ 
 
   tags = {
     Name        = "cloudtrail-management"
