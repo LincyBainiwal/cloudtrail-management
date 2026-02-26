@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "trail_bucket" {
   bucket        = var.bucket_name
-  force_destroy = true
+  force_destroy = false
 }
 
 resource "aws_s3_bucket_versioning" "trail_versioning" {
