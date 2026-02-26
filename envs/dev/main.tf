@@ -25,3 +25,4 @@ module "cloudtrail_auditor" {
     Environment = "Dev"
   }
 }
+# Sync bucket name with existing infrastructure
